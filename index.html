@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Sheme Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <section class="action-bar">
+        <input type="color" name="input-color" id="input-color" />
+        <select name="scheme-mode" id="scheme-mode">
+          <option value="monochrome">monochrome</option>
+          <option value="monochrome-dark">monochrome-dark</option>
+          <option value="monochrome-light">monochrome-light</option>
+          <option value="analogic">analogic</option>
+          <option value="complement">complement</option>
+          <option value="analogic-complement">analogic-complement</option>
+          <option value="triad">triad</option>
+          <option value="quad">quad</option>
+        </select>
+        <button class="btn" id="get-color-scheme">Get color scheme</button>
+      </section>
+      <section class="hex-colors">
+        <div class="color c0"></div>
+        <div class="color c1"></div>
+        <div class="color c2"></div>
+        <div class="color c3"></div>
+        <div class="color c4"></div>
+      </section>
+      <section class="hex-values">
+        <div class="hex-values-content">
+          <div class="hex-value v0"><p></p></div>
+          <div class="hex-value v1"><p></p></div>
+          <div class="hex-value v2"><p></p></div>
+          <div class="hex-value v3"><p></p></div>
+          <div class="hex-value v4"><p></p></div>
+        </div>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
